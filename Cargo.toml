@@ -1,0 +1,15 @@
+[package]
+name = "nrf52-template"
+version = "0.1.0"
+authors = ["James Munns <james.munns@gmail.com>"]
+
+[dependencies]
+nrf52dk-sys = "0.1.1"
+
+[profile.dev]
+panic = "abort"
+lto = true
+
+[profile.release]
+panic = "abort"
+lto = true
